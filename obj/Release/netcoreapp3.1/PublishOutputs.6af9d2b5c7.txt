@@ -1,0 +1,5 @@
+C:\Users\Usuario\OneDrive\Área de Trabalho\Sistema Automático de lista\Projeto S.A.L.exe
+C:\Users\Usuario\OneDrive\Área de Trabalho\Sistema Automático de lista\Projeto S.A.L.dll
+C:\Users\Usuario\OneDrive\Área de Trabalho\Sistema Automático de lista\Projeto S.A.L.deps.json
+C:\Users\Usuario\OneDrive\Área de Trabalho\Sistema Automático de lista\Projeto S.A.L.runtimeconfig.json
+C:\Users\Usuario\OneDrive\Área de Trabalho\Sistema Automático de lista\Projeto S.A.L.pdb
