@@ -7,6 +7,17 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>GOPH-JPGE.ico</ApplicationIcon>
     <Win32Resource />
+    <SignAssembly>false</SignAssembly>
+    <Authors>DEVJS2005/Deadpool533</Authors>
+    <Company>JSinformatica</Company>
+    <Product>Sistema Automático de lista</Product>
+    <Version>2.0.0</Version>
+    <Description>Projeto iniciado como aplicativo de console e logo sendo voltado para construção de uma interface que interagi com o usuario e pode ajuda-lo no seu dia a dia como funcionario da GOPH.</Description>
+    <Copyright>DEVJS2005</Copyright>
+    <NeutralLanguage>pt-BR</NeutralLanguage>
+    <PackageIcon>GOPH-JPGE.ico</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/DEVJS2005/GOPH-S.A.L-Interface-</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,6 +33,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="GOPH-JPGE.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

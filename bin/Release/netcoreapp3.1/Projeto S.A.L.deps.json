@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Projeto S.A.L/1.0.0": {
+      "Projeto S.A.L/2.0.0": {
         "runtime": {
           "Projeto S.A.L.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "Projeto S.A.L/1.0.0": {
+    "Projeto S.A.L/2.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

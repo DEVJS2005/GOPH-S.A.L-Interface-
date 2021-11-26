@@ -11,13 +11,19 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Projeto S.A.L")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("JSinformatica")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Projeto S.A.L")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("DEVJS2005")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Projeto iniciado como aplicativo de console e logo sendo voltado para construção " +
+    "de uma interface que interagi com o usuario e pode ajuda-lo no seu dia a dia com" +
+    "o funcionario da GOPH.")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0")]
+[assembly: System.Reflection.AssemblyProductAttribute("Sistema Automático de lista")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Projeto S.A.L")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("2.0.0.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/DEVJS2005/GOPH-S.A.L-Interface-")]
+[assembly: System.Resources.NeutralResourcesLanguageAttribute("pt-BR")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 

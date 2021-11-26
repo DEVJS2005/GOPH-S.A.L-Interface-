@@ -22,6 +22,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema Automático de lista")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Projeto S.A.L")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.0.0.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/DEVJS2005/GOPH-S.A.L-Interface-")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("pt-BR")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

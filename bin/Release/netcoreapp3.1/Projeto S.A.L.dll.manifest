@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Projeto S.A.L.exe" version="2.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Projeto S.A.L.exe" version="2.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="GOPH-JPGE.ico" xmlns="urn:schemas-microsoft-com:asm.v1">Projeto iniciado como aplicativo de console e logo sendo voltado para construção de uma interface que interagi com o usuario e pode ajuda-lo no seu dia a dia como funcionario da GOPH.</description>
   <application />
   <entryPoint>
     <assemblyIdentity name="Launcher" version="5.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -53,31 +54,40 @@
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="GOPH-JPGE.ico" size="209762">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5a+oObpMif2NSUqfzRpiU1G4pQZ+JM5hVvdCF/bpJWk=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Projeto S.A.L.deps.json" size="431">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>/+fIVH02BZyt7iwBSrSKS3wlik866GfyjLglkekmi7M=</dsig:DigestValue>
+      <dsig:DigestValue>dBJ+tDwc+leb7KBKYe0KP67ASpvYl8VFFkBLNIkIHhQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Projeto S.A.L.dll" size="954368">
+  <file name="Projeto S.A.L.dll" size="1166336">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>K6oU+iH9Ed2wKNQVdsUJW987LMyCQgUm47EqZf2taoc=</dsig:DigestValue>
+      <dsig:DigestValue>Yu/1VdMIz2sTl0H2pM5dmuH1DuI/wTG576TSeAP6aVI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Projeto S.A.L.exe" size="174592">
+  <file name="Projeto S.A.L.exe" size="385024">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>H6sycM02gDYUn12WXDlVzm5M/j8GyWYdMeeDpMHiu0c=</dsig:DigestValue>
+      <dsig:DigestValue>bqyb8LPY1a3uu0NFfBMOpTy7rfDTlmmOQwohJkoZ/vM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Projeto S.A.L.runtimeconfig.json" size="161">

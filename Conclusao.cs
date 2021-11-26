@@ -36,10 +36,11 @@ namespace Projeto_S.A.L
 
         
         int NumVisitas = 0;
-        string turno = "";
+        
         List<Aliados> ListAliados = new List<Aliados>();
         private void btnListar_Click(object sender, EventArgs e)
         {
+            string turno = "";
             if (rdbManhãC.Checked)
             {
                 turno = "Manhã";
@@ -72,7 +73,6 @@ namespace Projeto_S.A.L
             //Verificação
             if (txboxNmAliado.Text == "-x-")
             {
-                limparCampos();
                 if (ListAliados.Count < NumVisitas)
                 {
                     while (ListAliados.Count < NumVisitas)
@@ -180,16 +180,6 @@ namespace Projeto_S.A.L
             }
             else { limparCampos(); }
             //desmarcar e desativar as groupBox
-            rdbManhãC.Checked = false;
-            rdbTardeC.Checked = false;
-            rdbNoiteC.Checked = false;
-            rdbMadrugadaC.Checked = false;
-            rdb01TardeC.Checked = false;
-            rdb02TardeC.Checked = false;
-            rdb01NoiteC.Checked = false;
-            rdb02NoiteC.Checked = false;
-            rdb03NoiteC.Checked = false;
-            rdbMadrugadaC.Checked = false;
             grpBoxCIicoC.Visible = false;
             grpBxConfirmacao.Visible = false;
             //Ativar A caixa de texto
