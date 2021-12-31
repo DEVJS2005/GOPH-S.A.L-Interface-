@@ -1,7 +1,7 @@
 ﻿
 namespace Projeto_S.A.L
 {
-    partial class home
+    partial class homepage
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace Projeto_S.A.L
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homepage));
             this.lbl1 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.btnHome1 = new System.Windows.Forms.Button();
@@ -114,7 +114,7 @@ namespace Projeto_S.A.L
             this.label3.Size = new System.Drawing.Size(0, 21);
             this.label3.TabIndex = 7;
             // 
-            // home
+            // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,7 +131,7 @@ namespace Projeto_S.A.L
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "home";
+            this.Name = "homepage";
             this.Text = "Sistema automático de lista";
             this.ResumeLayout(false);
             this.PerformLayout();

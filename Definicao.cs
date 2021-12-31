@@ -6,17 +6,17 @@ using System.Drawing;
 using System.Text;
 using System.IO;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Projeto_S.A.L
 {
 
     public partial class Definicao : Form
     {
-        
+        Thread definicao;
         public Definicao()
         {
             InitializeComponent();
-            
         }
         public void limparCampos()
         {
@@ -26,11 +26,15 @@ namespace Projeto_S.A.L
        
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Conclusao telaConclusão = new Conclusao();
-            telaConclusão.Show();
+            definicao = new Thread(abrirJanela);
+            definicao.SetApartmentState(ApartmentState.STA);
+            definicao.Start();
+            this.Close();
         }
-
+        private void abrirJanela(object obj)
+        {
+            Application.Run(new Conclusao());
+        }
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             

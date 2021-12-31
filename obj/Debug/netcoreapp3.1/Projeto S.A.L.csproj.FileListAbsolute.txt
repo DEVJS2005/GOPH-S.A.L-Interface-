@@ -4,7 +4,6 @@ C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface graf
 C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface grafica)\bin\Debug\netcoreapp3.1\Projeto S.A.L.runtimeconfig.dev.json
 C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface grafica)\bin\Debug\netcoreapp3.1\Projeto S.A.L.dll
 C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface grafica)\bin\Debug\netcoreapp3.1\Projeto S.A.L.pdb
-C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface grafica)\obj\Debug\netcoreapp3.1\Projeto_S.A.L.home.resources
 C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface grafica)\obj\Debug\netcoreapp3.1\Projeto_S.A.L.Properties.Resources.resources
 C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface grafica)\obj\Debug\netcoreapp3.1\Projeto_S.A.L.Seleção.resources
 C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface grafica)\obj\Debug\netcoreapp3.1\Projeto S.A.L.csproj.GenerateResource.cache
@@ -18,3 +17,4 @@ C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface graf
 C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface grafica)\obj\Debug\netcoreapp3.1\Projeto_S.A.L.Conclusao.resources
 C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface grafica)\obj\Debug\netcoreapp3.1\Projeto_S.A.L.Definicao.resources
 C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface grafica)\obj\Debug\netcoreapp3.1\Projeto S.A.L.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Documentos\ALL-Scripts\C#\Projeto S.A.L(Interface grafica)\obj\Debug\netcoreapp3.1\Projeto_S.A.L.homepage.resources

@@ -40,14 +40,16 @@ namespace Projeto_S.A.L
             this.rdbNoiteC = new System.Windows.Forms.RadioButton();
             this.rdbTardeC = new System.Windows.Forms.RadioButton();
             this.rdbManhãC = new System.Windows.Forms.RadioButton();
+            this.txboxRetorno = new System.Windows.Forms.TextBox();
             this.grpBoxCIicoC = new System.Windows.Forms.GroupBox();
             this.rdb02NoiteC = new System.Windows.Forms.RadioButton();
             this.rdb01NoiteC = new System.Windows.Forms.RadioButton();
             this.rdb03NoiteC = new System.Windows.Forms.RadioButton();
             this.rdb02TardeC = new System.Windows.Forms.RadioButton();
             this.rdb01TardeC = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblNoitenumero = new System.Windows.Forms.Label();
+            this.lblTardenumero = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.grpBxConfirmacao.SuspendLayout();
             this.grpBoxCIicoC.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +58,7 @@ namespace Projeto_S.A.L
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(170, 33);
+            this.label1.Location = new System.Drawing.Point(179, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 41);
             this.label1.TabIndex = 0;
@@ -64,7 +66,7 @@ namespace Projeto_S.A.L
             // 
             // txboxNmAliado
             // 
-            this.txboxNmAliado.Location = new System.Drawing.Point(126, 77);
+            this.txboxNmAliado.Location = new System.Drawing.Point(132, 109);
             this.txboxNmAliado.Name = "txboxNmAliado";
             this.txboxNmAliado.Size = new System.Drawing.Size(212, 23);
             this.txboxNmAliado.TabIndex = 1;
@@ -73,7 +75,7 @@ namespace Projeto_S.A.L
             // 
             this.btnListar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnListar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnListar.Location = new System.Drawing.Point(27, 300);
+            this.btnListar.Location = new System.Drawing.Point(27, 295);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(114, 35);
             this.btnListar.TabIndex = 2;
@@ -84,7 +86,7 @@ namespace Projeto_S.A.L
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(320, 302);
+            this.button2.Location = new System.Drawing.Point(325, 298);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 30);
             this.button2.TabIndex = 3;
@@ -95,7 +97,7 @@ namespace Projeto_S.A.L
             // btnGerar
             // 
             this.btnGerar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGerar.Location = new System.Drawing.Point(170, 300);
+            this.btnGerar.Location = new System.Drawing.Point(179, 296);
             this.btnGerar.Name = "btnGerar";
             this.btnGerar.Size = new System.Drawing.Size(98, 32);
             this.btnGerar.TabIndex = 4;
@@ -111,9 +113,9 @@ namespace Projeto_S.A.L
             this.grpBxConfirmacao.Controls.Add(this.rdbManhãC);
             this.grpBxConfirmacao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.grpBxConfirmacao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.grpBxConfirmacao.Location = new System.Drawing.Point(12, 122);
+            this.grpBxConfirmacao.Location = new System.Drawing.Point(12, 138);
             this.grpBxConfirmacao.Name = "grpBxConfirmacao";
-            this.grpBxConfirmacao.Size = new System.Drawing.Size(236, 156);
+            this.grpBxConfirmacao.Size = new System.Drawing.Size(240, 156);
             this.grpBxConfirmacao.TabIndex = 6;
             this.grpBxConfirmacao.TabStop = false;
             this.grpBxConfirmacao.Text = "Confirme o turno do ciclo";
@@ -127,6 +129,7 @@ namespace Projeto_S.A.L
             this.rdbMadrugadaC.TabIndex = 3;
             this.rdbMadrugadaC.Text = "Madrugada";
             this.rdbMadrugadaC.UseVisualStyleBackColor = true;
+            this.rdbMadrugadaC.CheckedChanged += new System.EventHandler(this.rdbMadrugadaC_CheckedChanged);
             // 
             // rdbNoiteC
             // 
@@ -137,6 +140,7 @@ namespace Projeto_S.A.L
             this.rdbNoiteC.TabIndex = 2;
             this.rdbNoiteC.Text = "Noite";
             this.rdbNoiteC.UseVisualStyleBackColor = true;
+            this.rdbNoiteC.CheckedChanged += new System.EventHandler(this.rdbNoiteC_CheckedChanged);
             // 
             // rdbTardeC
             // 
@@ -147,6 +151,7 @@ namespace Projeto_S.A.L
             this.rdbTardeC.TabIndex = 1;
             this.rdbTardeC.Text = "Tarde";
             this.rdbTardeC.UseVisualStyleBackColor = true;
+            this.rdbTardeC.CheckedChanged += new System.EventHandler(this.rdbTardeC_CheckedChanged);
             // 
             // rdbManhãC
             // 
@@ -157,6 +162,17 @@ namespace Projeto_S.A.L
             this.rdbManhãC.TabIndex = 0;
             this.rdbManhãC.Text = "Manhã";
             this.rdbManhãC.UseVisualStyleBackColor = true;
+            this.rdbManhãC.CheckedChanged += new System.EventHandler(this.rdbManhãC_CheckedChanged);
+            // 
+            // txboxRetorno
+            // 
+            this.txboxRetorno.Enabled = false;
+            this.txboxRetorno.Location = new System.Drawing.Point(0, 1);
+            this.txboxRetorno.Name = "txboxRetorno";
+            this.txboxRetorno.ReadOnly = true;
+            this.txboxRetorno.Size = new System.Drawing.Size(303, 23);
+            this.txboxRetorno.TabIndex = 8;
+            this.txboxRetorno.Visible = false;
             // 
             // grpBoxCIicoC
             // 
@@ -165,15 +181,16 @@ namespace Projeto_S.A.L
             this.grpBoxCIicoC.Controls.Add(this.rdb03NoiteC);
             this.grpBoxCIicoC.Controls.Add(this.rdb02TardeC);
             this.grpBoxCIicoC.Controls.Add(this.rdb01TardeC);
-            this.grpBoxCIicoC.Controls.Add(this.label3);
-            this.grpBoxCIicoC.Controls.Add(this.label2);
+            this.grpBoxCIicoC.Controls.Add(this.lblNoitenumero);
+            this.grpBoxCIicoC.Controls.Add(this.lblTardenumero);
             this.grpBoxCIicoC.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.grpBoxCIicoC.Location = new System.Drawing.Point(254, 122);
+            this.grpBoxCIicoC.Location = new System.Drawing.Point(258, 140);
             this.grpBoxCIicoC.Name = "grpBoxCIicoC";
             this.grpBoxCIicoC.Size = new System.Drawing.Size(215, 156);
             this.grpBoxCIicoC.TabIndex = 7;
             this.grpBoxCIicoC.TabStop = false;
             this.grpBoxCIicoC.Text = "Confirme o numero do ciclo";
+            this.grpBoxCIicoC.Visible = false;
             // 
             // rdb02NoiteC
             // 
@@ -230,24 +247,34 @@ namespace Projeto_S.A.L
             this.rdb01TardeC.Text = "01";
             this.rdb01TardeC.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // lblNoitenumero
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(122, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Noite:";
+            this.lblNoitenumero.AutoSize = true;
+            this.lblNoitenumero.Location = new System.Drawing.Point(122, 39);
+            this.lblNoitenumero.Name = "lblNoitenumero";
+            this.lblNoitenumero.Size = new System.Drawing.Size(44, 16);
+            this.lblNoitenumero.TabIndex = 1;
+            this.lblNoitenumero.Text = "Noite:";
             // 
-            // label2
+            // lblTardenumero
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(7, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tarde:";
+            this.lblTardenumero.AutoSize = true;
+            this.lblTardenumero.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTardenumero.Location = new System.Drawing.Point(7, 39);
+            this.lblTardenumero.Name = "lblTardenumero";
+            this.lblTardenumero.Size = new System.Drawing.Size(47, 16);
+            this.lblTardenumero.TabIndex = 0;
+            this.lblTardenumero.Text = "Tarde:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(123, 335);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(255, 15);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Para finalizar digite \"-x-\" e aperte em salvar";
             // 
             // Conclusao
             // 
@@ -255,6 +282,8 @@ namespace Projeto_S.A.L
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(481, 349);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txboxRetorno);
             this.Controls.Add(this.grpBoxCIicoC);
             this.Controls.Add(this.grpBxConfirmacao);
             this.Controls.Add(this.btnGerar);
@@ -293,7 +322,9 @@ namespace Projeto_S.A.L
         private System.Windows.Forms.RadioButton rdb03NoiteC;
         private System.Windows.Forms.RadioButton rdb02TardeC;
         private System.Windows.Forms.RadioButton rdb01TardeC;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNoitenumero;
+        private System.Windows.Forms.Label lblTardenumero;
+        private System.Windows.Forms.TextBox txboxRetorno;
+        private System.Windows.Forms.Label label4;
     }
 }

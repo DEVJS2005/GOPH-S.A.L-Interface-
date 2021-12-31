@@ -43,8 +43,8 @@ namespace Projeto_S.A.L
             this.rdbManha = new System.Windows.Forms.RadioButton();
             this.btnCabeçarioEnviar = new System.Windows.Forms.Button();
             this.grpboxNumbCiclo = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNoite = new System.Windows.Forms.Label();
+            this.lblTarde = new System.Windows.Forms.Label();
             this.rdbNoite2 = new System.Windows.Forms.RadioButton();
             this.rdbTarde2 = new System.Windows.Forms.RadioButton();
             this.rdbNoite1 = new System.Windows.Forms.RadioButton();
@@ -130,6 +130,7 @@ namespace Projeto_S.A.L
             this.rdbMadrugada.TabStop = true;
             this.rdbMadrugada.Text = "Madrugada";
             this.rdbMadrugada.UseVisualStyleBackColor = true;
+            this.rdbMadrugada.CheckedChanged += new System.EventHandler(this.rdbMadrugada_CheckedChanged);
             // 
             // rdbNoite
             // 
@@ -141,6 +142,7 @@ namespace Projeto_S.A.L
             this.rdbNoite.TabStop = true;
             this.rdbNoite.Text = "Noite";
             this.rdbNoite.UseVisualStyleBackColor = true;
+            this.rdbNoite.CheckedChanged += new System.EventHandler(this.rdbNoite_CheckedChanged);
             // 
             // rdbTarde
             // 
@@ -152,6 +154,7 @@ namespace Projeto_S.A.L
             this.rdbTarde.TabStop = true;
             this.rdbTarde.Text = "Tarde";
             this.rdbTarde.UseVisualStyleBackColor = true;
+            this.rdbTarde.CheckedChanged += new System.EventHandler(this.rdbTarde_CheckedChanged);
             // 
             // rdbManha
             // 
@@ -163,6 +166,7 @@ namespace Projeto_S.A.L
             this.rdbManha.TabStop = true;
             this.rdbManha.Text = "Manhã";
             this.rdbManha.UseVisualStyleBackColor = true;
+            this.rdbManha.CheckedChanged += new System.EventHandler(this.rdbManha_CheckedChanged);
             // 
             // btnCabeçarioEnviar
             // 
@@ -178,8 +182,8 @@ namespace Projeto_S.A.L
             // grpboxNumbCiclo
             // 
             this.grpboxNumbCiclo.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.grpboxNumbCiclo.Controls.Add(this.label2);
-            this.grpboxNumbCiclo.Controls.Add(this.label1);
+            this.grpboxNumbCiclo.Controls.Add(this.lblNoite);
+            this.grpboxNumbCiclo.Controls.Add(this.lblTarde);
             this.grpboxNumbCiclo.Controls.Add(this.rdbNoite2);
             this.grpboxNumbCiclo.Controls.Add(this.rdbTarde2);
             this.grpboxNumbCiclo.Controls.Add(this.rdbNoite1);
@@ -194,23 +198,23 @@ namespace Projeto_S.A.L
             this.grpboxNumbCiclo.TabStop = false;
             this.grpboxNumbCiclo.Text = "Seleção do ciclo:";
             // 
-            // label2
+            // lblNoite
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(125, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 21);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Noite:";
+            this.lblNoite.AutoSize = true;
+            this.lblNoite.Location = new System.Drawing.Point(125, 38);
+            this.lblNoite.Name = "lblNoite";
+            this.lblNoite.Size = new System.Drawing.Size(57, 21);
+            this.lblNoite.TabIndex = 7;
+            this.lblNoite.Text = "Noite:";
             // 
-            // label1
+            // lblTarde
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 21);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Tarde:";
+            this.lblTarde.AutoSize = true;
+            this.lblTarde.Location = new System.Drawing.Point(24, 38);
+            this.lblTarde.Name = "lblTarde";
+            this.lblTarde.Size = new System.Drawing.Size(56, 21);
+            this.lblTarde.TabIndex = 6;
+            this.lblTarde.Text = "Tarde:";
             // 
             // rdbNoite2
             // 
@@ -222,6 +226,7 @@ namespace Projeto_S.A.L
             this.rdbNoite2.TabStop = true;
             this.rdbNoite2.Text = "02";
             this.rdbNoite2.UseVisualStyleBackColor = true;
+            this.rdbNoite2.CheckedChanged += new System.EventHandler(this.rdbNoite2_CheckedChanged);
             // 
             // rdbTarde2
             // 
@@ -232,6 +237,7 @@ namespace Projeto_S.A.L
             this.rdbTarde2.TabIndex = 4;
             this.rdbTarde2.Text = "02";
             this.rdbTarde2.UseVisualStyleBackColor = true;
+            this.rdbTarde2.CheckedChanged += new System.EventHandler(this.rdbTarde2_CheckedChanged);
             // 
             // rdbNoite1
             // 
@@ -243,6 +249,7 @@ namespace Projeto_S.A.L
             this.rdbNoite1.TabStop = true;
             this.rdbNoite1.Text = "01";
             this.rdbNoite1.UseVisualStyleBackColor = true;
+            this.rdbNoite1.CheckedChanged += new System.EventHandler(this.rdbNoite1_CheckedChanged);
             // 
             // rdbNoite3
             // 
@@ -254,6 +261,7 @@ namespace Projeto_S.A.L
             this.rdbNoite3.TabStop = true;
             this.rdbNoite3.Text = "03";
             this.rdbNoite3.UseVisualStyleBackColor = true;
+            this.rdbNoite3.CheckedChanged += new System.EventHandler(this.rdbNoite3_CheckedChanged);
             // 
             // rdbTarde1
             // 
@@ -264,6 +272,7 @@ namespace Projeto_S.A.L
             this.rdbTarde1.TabIndex = 1;
             this.rdbTarde1.Text = "01";
             this.rdbTarde1.UseVisualStyleBackColor = true;
+            this.rdbTarde1.CheckedChanged += new System.EventHandler(this.rdbTarde1_CheckedChanged);
             // 
             // Seleção
             // 
@@ -307,8 +316,8 @@ namespace Projeto_S.A.L
         private System.Windows.Forms.RadioButton rdbManha;
         private System.Windows.Forms.Button btnCabeçarioEnviar;
         private System.Windows.Forms.GroupBox grpboxNumbCiclo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNoite;
+        private System.Windows.Forms.Label lblTarde;
         private System.Windows.Forms.RadioButton rdbNoite2;
         private System.Windows.Forms.RadioButton rdbTarde2;
         private System.Windows.Forms.RadioButton rdbNoite1;

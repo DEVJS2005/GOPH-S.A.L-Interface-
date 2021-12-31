@@ -17,7 +17,7 @@ namespace Projeto_S.A.L
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new home());
+            Application.Run(new homepage());
         }
     }
 }
